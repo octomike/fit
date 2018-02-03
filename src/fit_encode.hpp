@@ -18,6 +18,7 @@
 #if !defined(FIT_ENCODE_HPP)
 #define FIT_ENCODE_HPP
 
+#include <cstring>
 #include <iosfwd>
 #include <vector>
 #include "fit.hpp"
