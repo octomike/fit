@@ -14,11 +14,18 @@ The easiest way to install the package is directly from Github, using Hadley Wic
 ```R
 install.packages('devtools') # if you don't already have it
 library(devtools)
-install_github('kuperov/fit')
+install_github('russelldb/fit')
 ```
 Alternatively, you can download the [R source package](https://github.com/kuperov/fit/releases/download/v0.1/fit_0.1.tar.gz) and install with `install.packages('fit_0.1.tar.gz')`.
 
 The package depends on `Rcpp`, and there are C++ sources to compile. So you need a working C++ compiler. If you have trouble compiling the code, let me know and I'll see if I can hook you up with a binary package instead.
+
+NOTE: I (russelldb) updated this to work with the latest 20.66.00 release, and had to do the following to get it to compile:
+
+1. Add a file `~/.R/Makevars`
+2. add the following line to that file `CXXFLAGS=-g -std=c++11`
+
+Also, NOTE you can use `install_git("./")` from the clone, if you want to work on the library locally.
 
 Getting started
 ---------------
