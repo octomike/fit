@@ -20,7 +20,7 @@ Alternatively, you can download the [R source package](https://github.com/kupero
 
 The package depends on `Rcpp`, and there are C++ sources to compile. So you need a working C++ compiler. If you have trouble compiling the code, let me know and I'll see if I can hook you up with a binary package instead.
 
-NOTE: I (russelldb) updated this to with the latest 20.66.00 release, and had to do the following to get it to compile:
+NOTE: I (russelldb) updated this to work with the latest 20.66.00 release, and had to do the following to get it to compile:
 
 1. Add a file `~/.R/Makevars`
 2. add the following line to that file `CXXFLAGS=-g -std=c++11`
